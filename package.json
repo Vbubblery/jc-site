@@ -6,10 +6,16 @@
     "dev": "next dev",
     "build": "NODE_ENV=production next build && next export",
     "start": "next start",
-    "lint": "eslint --ext ,.ts,tsx --fix ."
+    "lint": "eslint --ext ,.ts,tsx --fix ./src"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.4",
+    "animate.css": "^3.7.2",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^15.0.0",
     "next": "9.3.4",
+    "next-i18next": "^4.2.1",
+    "next-with-apollo": "^5.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
@@ -26,9 +32,21 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
     "postcss-import": "^12.0.1",
     "prettier": "^2.0.2",
     "tailwindcss": "^1.2.0",
     "typescript": "^3.8.3"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx}": [
+      "eslint --ext ,.ts,tsx --fix ./src"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

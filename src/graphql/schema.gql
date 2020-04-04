@@ -1,0 +1,16 @@
+type Todo {
+   title: String!
+   completed: Boolean
+}
+
+type Query {
+   allTodos: [Todo!]
+   todosByCompletedFlag(completed: Boolean!): [Todo!]
+}
+
+query CurrentUserForLayout {
+  currentUser {
+    login
+    avatar_url
+  }
+}

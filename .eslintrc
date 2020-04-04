@@ -31,11 +31,13 @@
     "emotion"
   ],
   "rules": {
+
     "no-plusplus": ["off"],
     "react/display-name": "off",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
