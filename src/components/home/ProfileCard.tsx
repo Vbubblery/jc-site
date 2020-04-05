@@ -17,7 +17,7 @@ const ProfileCard = ({ t }: any) => {
           <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
           <p className="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
             <svg
-              className="h-4 fill-current text-teal-700 pr-4"
+              className="h-4 fill-current text-primary pr-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -27,7 +27,7 @@ const ProfileCard = ({ t }: any) => {
           </p>
           <p className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
             <svg
-              className="h-4 fill-current text-teal-700 pr-4"
+              className="h-4 fill-current text-primary pr-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -37,7 +37,7 @@ const ProfileCard = ({ t }: any) => {
           </p>
           <p className="pt-8 whitespace-pre-line text-sm">{t('aboutMe')}</p>
           <div className="pt-12 pb-8">
-            <button className="bg-teal-700 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded-full">
+            <button className="bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full">
               {t('getMore')}
             </button>
           </div>
@@ -49,7 +49,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@facebook_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@twitter_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@github_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@unsplash_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@dribble_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@instagram_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ const ProfileCard = ({ t }: any) => {
               data-tippy-content="@youtube_handle"
             >
               <svg
-                className="h-6 fill-current text-gray-600 hover:text-teal-700"
+                className="h-6 fill-current text-primary hover:text-secondary"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
