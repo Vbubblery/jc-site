@@ -15,7 +15,7 @@ const LanguageSwitcher = () => {
       className="absolute cursor-pointer right-0 mr-2 mt-2"
       style={{ width: 25, height: 25 }}
     >
-      <ToolTip text="hello">
+      <ToolTip text={language === 'zh' ? 'English' : 'Chinese'}>
         {language === 'zh' ? (
           <img
             src="/static/svgs/uk.svg"

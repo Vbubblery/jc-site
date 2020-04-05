@@ -35,7 +35,7 @@ const Tooltip = ({ children, text, placement }: any) => {
             ref={tooltipRef}
           >
             <div>
-              <div className="text-white text-xs p-3">{text}</div>
+              <div className="text-white font-bold text-xs p-3">{text}</div>
             </div>
           </div>
         </div>

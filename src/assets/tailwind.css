@@ -1,3 +1,22 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+:root {
+  /* 主颜色是最常在应用屏幕和组件中显示的颜色 */
+  --color-primary: rgb(36, 123, 160);
+  --color-primary-variant: rgb(14, 79, 107);
+  /* 次要颜色提供了更多强调和区分产品的方法，具有辅助颜色是可选的。 */
+  /*  浮动操作按钮
+      选择控件，如滑块和开关
+      突出显示所选文本
+      进度条
+      链接和标题
+  */
+  --color-secondary: rgb(48, 95, 87);
+  --color-secondary-variant: rgb(48, 95, 87);
+  /* 会影响组件（如卡片、纸张和菜单）的表面 */
+  --color-surface: #FFF;
+  --color-background: #FFF;
+  --color-error: #FF1654;
+}
