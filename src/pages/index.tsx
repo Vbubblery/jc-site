@@ -1,5 +1,7 @@
-import ProfileCard from '../components/home/ProfileCard';
-
+import dynamic from 'next/dynamic';
+const ProfileCard = dynamic(() => import('../components/home/ProfileCard'), {
+  ssr: false,
+});
 const Home = () => {
   return (
     <>

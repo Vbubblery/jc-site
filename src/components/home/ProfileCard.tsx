@@ -1,4 +1,5 @@
 import { withTranslation } from '../../libs/i18n';
+
 const me =
   'https://res.cloudinary.com/dkxaqxc2h/image/upload/v1585939503/Me/JPEG_20190614_190724_1882424199087879676_ep8e2e.jpg';
 const ProfileCard = ({ t }: any) => {
@@ -37,7 +38,13 @@ const ProfileCard = ({ t }: any) => {
           </p>
           <p className="pt-8 whitespace-pre-line text-sm">{t('aboutMe')}</p>
           <div className="pt-12 pb-8">
-            <button className="bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full">
+            <button
+              onClick={() =>
+                (location.href =
+                  'https://www.linkedin.com/in/juncheng-z-620657149/')
+              }
+              className="bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full"
+            >
               {t('getMore')}
             </button>
           </div>
