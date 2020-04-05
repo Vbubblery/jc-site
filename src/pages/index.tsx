@@ -1,4 +1,5 @@
 import ProfileCard from '../components/home/ProfileCard';
+
 const Home = () => {
   return (
     <>
@@ -14,4 +15,8 @@ const Home = () => {
     </>
   );
 };
+Home.getInitialProps = () => ({
+  namespacesRequired: ['profile'],
+});
+
 export default Home;

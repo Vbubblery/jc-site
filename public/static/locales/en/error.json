@@ -1,0 +1,5 @@
+{
+  "404":"Oops! Looks like the page is gone ..",
+  "errorWithStatusCode":"An error {{statusCode}} occurred ..",
+  "unknownError":"An error occurred on client"
+}

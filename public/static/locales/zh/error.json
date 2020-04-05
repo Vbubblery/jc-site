@@ -1,0 +1,5 @@
+{
+  "404":"抱歉，你要找的页面不见啦 ~ ~",
+  "errorWithStatusCode":"发生错误啦，错误代码为：{{statusCode}}!",
+  "unknownError":"未知错误!"
+}

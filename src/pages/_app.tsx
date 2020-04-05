@@ -1,14 +1,16 @@
 // import App from 'next/app'
-import '../tailwind.css';
+import '../assets/tailwind.css';
 import 'animate.css';
 import Layout from '../components/Layout';
 import Head from 'next/head';
+import { appWithTranslation } from '../libs/i18n';
+import App from 'next/app';
 
 import withApollo from 'next-with-apollo';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient, { InMemoryCache } from 'apollo-boost';
 
-const App = ({ Component, pageProps, apollo }: any) => {
+function MyApp({ Component, pageProps, apollo }: any) {
   return (
     <Layout>
       <Head>
@@ -22,8 +24,11 @@ const App = ({ Component, pageProps, apollo }: any) => {
       </ApolloProvider>
     </Layout>
   );
+}
+MyApp.getInitialProps = async (appContext: any) => {
+  const appProps = await App.getInitialProps(appContext);
+  return { ...appProps };
 };
-
 export default withApollo(({ initialState }) => {
   return new ApolloClient({
     uri: 'https://graphql.fauna.com/graphql',
@@ -36,15 +41,4 @@ export default withApollo(({ initialState }) => {
       });
     },
   });
-})(App);
-// Only uncomment this method if you have blocking data requirements for
-// every single page in your application. This disables the ability to
-// perform automatic static optimization, causing every page in your app to
-// be server-side rendered.
-//
-// MyApp.getInitialProps = async (appContext) => {
-//   // calls page's `getInitialProps` and fills `appProps.pageProps`
-//   const appProps = await App.getInitialProps(appContext);
-//
-//   return { ...appProps }
-// }
+})(appWithTranslation(MyApp));
