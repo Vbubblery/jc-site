@@ -24,9 +24,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "incremental": true
   },
-  "files": ["types/graphql.d.ts"],
+  "files": [
+    "types/graphql.d.ts"
+  ],
   "exclude": [
     "node_modules"
   ],

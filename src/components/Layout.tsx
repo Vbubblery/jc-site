@@ -3,9 +3,11 @@ const LanguageSwitcher = dynamic(() => import('./language/Switcher'), {
   ssr: false,
 });
 
-export default (props: any) => (
+const Layout = (props: any) => (
   <>
     <LanguageSwitcher />
     {props.children}
   </>
 );
+
+export default Layout;
