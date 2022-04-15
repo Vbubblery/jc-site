@@ -1,4 +1,3 @@
-// import App from 'next/app'
 import '../assets/tailwind.css';
 import 'animate.css';
 import Layout from '../components/Layout';
